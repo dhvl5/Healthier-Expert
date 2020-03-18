@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProfilePicture">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="600dp"
+        android:layout_height="400dp"
+        android:background="@drawable/qqq"
+        android:filterTouchesWhenObscured="true"
+        android:layout_marginTop="10dp"
+        />
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:filterTouchesWhenObscured="true"
+        android:layout_marginTop="270dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rrr"
+        />
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:filterTouchesWhenObscured="true"
+        android:layout_marginTop="295dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/sss"
+        />
+    <TextView
+        android:id="@+id/add_your_profile_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:layout_below="@+id/img2"
+        android:text="Add Your Profile Picture"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textLorem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_your_profile_picture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/Scelerisque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textLorem"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:text="Scelerisque aenean mi sed donec"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/browse_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Scelerisque"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="45dp"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:text="BROWSE GALLERY"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:background="@drawable/browsegallery"
+        />
+    <View
+        android:layout_width="70dp"
+        android:layout_height="1dp"
+        android:background="#036913"
+        android:layout_below="@+id/browse_gallery"
+        android:layout_marginTop="29dp"
+        android:layout_marginLeft="40dp"
+        />
+    <View
+        android:layout_width="150dp"
+        android:layout_height="3dp"
+        android:background="#036913"
+        android:layout_below="@id/browse_gallery"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="115dp"
+        />
+    <View
+        android:layout_width="70dp"
+        android:layout_height="1dp"
+        android:background="#036913"
+        android:layout_below="@+id/browse_gallery"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="270dp"
+        />
+
+    <TextView
+        android:id="@+id/open_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/browse_gallery"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:text="OPEN CAMERA"
+        android:textColor="#80000000"
+        android:textSize="15sp" />
+</RelativeLayout>

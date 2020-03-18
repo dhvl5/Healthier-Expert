@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".weight_o_meter">
+
+    <TextView
+        android:id="@+id/bmicount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI Count"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/merriweather_sans"
+        android:textColor="#000000"
+        />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Age"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/bmicount"
+        android:layout_marginRight="50dp"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:textColor="#80000000"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Height(Meter)"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:textColor="#80000000"
+        android:layout_below="@id/age"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Weight(KG)"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:textColor="#80000000"
+        android:layout_below="@id/height"
+        android:textSize="15sp"
+        />
+
+    <Button
+        android:id="@+id/submit3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weight"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/submit"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:text="SUBMIT"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+</RelativeLayout>

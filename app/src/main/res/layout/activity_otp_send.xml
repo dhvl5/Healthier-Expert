@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".otpsend">
+
+    <TextView
+        android:id="@+id/otp_has_been_sent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="OTP has been sent on the email you entered"
+        android:textSize="15sp"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        />
+
+    <EditText
+        android:id="@+id/otp_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/otp"
+        android:layout_marginTop="50dp"
+        android:hint="Enter OTP"
+        android:layout_below="@+id/otp_has_been_sent"
+        />
+
+    <Button
+        android:id="@+id/submitbtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="SUBMIT"
+        android:background="@drawable/submit"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/otp_email"
+        />
+</RelativeLayout>

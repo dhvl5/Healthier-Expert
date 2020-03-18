@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".email_verification_successful">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:filterTouchesWhenObscured="true"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/l1"
+        />
+
+    <TextView
+        android:id="@+id/email_verification_successful"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="217dp"
+        android:fontFamily="@font/merriweather_sans"
+        android:text="Email Verfication Successful"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/An_Email_Verification_has"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_verification_successful"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:text="An Email Verfication has been sent to your"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/email_successful"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/An_Email_Verification_has"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:text="email krinashah@gmail.com. Please enter the"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/digit_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_successful"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:text="6-digit code given in that email to continue."
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/digit_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_cloud_done_black_24dp"
+        />
+
+    <Button
+        android:id="@+id/submit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/digit_code"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/submit_successful"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:text="SUBMIT"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+    <View
+        android:layout_width="70dp"
+        android:layout_height="1dp"
+        android:background="#036913"
+        android:layout_below="@+id/submit2"
+        android:layout_marginTop="31dp"
+        android:layout_marginLeft="43dp"
+        />
+
+
+    <View
+        android:layout_width="70dp"
+        android:layout_height="1dp"
+        android:background="#036913"
+        android:layout_below="@+id/submit2"
+        android:layout_marginTop="31dp"
+        android:layout_marginLeft="118dp"
+        />
+    <View
+        android:layout_width="150dp"
+        android:layout_height="3dp"
+        android:background="#036913"
+        android:layout_below="@id/submit2"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="198dp"
+        />
+
+    <TextView
+        android:id="@+id/resending_again_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:text="Resending Again in 30 Seconds"
+        android:textColor="#80000000"
+        android:textSize="15sp" />
+</RelativeLayout>

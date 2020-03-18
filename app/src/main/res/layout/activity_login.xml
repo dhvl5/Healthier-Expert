@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:filterTouchesWhenObscured="true"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/l1"
+        />
+
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:text="Sign In"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/enter_your_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="51dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:hint="Enter Your Email"
+        android:layout_marginTop="300dp"
+        android:textColor="#80000000"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="51dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="370dp"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:hint="Enter Your Password"
+        android:textColor="#80000000"
+        />
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="245dp"
+        android:layout_marginTop="435dp"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:text="Forgot password?"
+        android:onClick="fpass"
+        android:textColor="#80000000"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="470dp"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/signin"
+        />
+    <View
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/signin"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="70dp"
+        android:background="#000000"
+        />
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:text="or"
+        android:textColor="#80000000"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/signin"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="70dp"
+        android:background="#000000"
+        />
+
+    <TextView
+        android:id="@+id/dont_have_an"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/or"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:text="Don’t have an account?"
+        android:textColor="#80000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="15sp"
+        android:textColor="#02B65F"
+        android:layout_below="@+id/or"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="251dp"
+        android:onClick="signUp"
+        />
+
+</RelativeLayout>

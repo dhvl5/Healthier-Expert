@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Healthier Expert</string>
+    <string name="person_description">A_B_C</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="person_name">ABC</string>
+    <string name="person_email">abc@email.com</string>
+    <string name="navigation_item_1">Calorie Counter</string>
+    <string name="navigation_item_2">Weight O Meter</string>
+    <string name="navigation_item_3">Hair and Skin Problems</string>
+    <string name="navigation_item_4">Child Care</string>
+    <string name="navigation_item_5">FAQ</string>
+    <string name="navigation_sub_item_1">Navi_Sub_Item_1</string>
+    <string name="navigation_sub_item_2">Navi_Sub_Item_2</string>
+    <string name="open_drawer">Open Navigation Drawer</string>
+    <string name="close_drawer">Close Navigation Drawer</string>
+</resources>

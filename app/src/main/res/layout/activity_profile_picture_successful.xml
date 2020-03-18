@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePictureSuccessful">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="500dp"
+        android:layout_height="430dp"
+        android:background="@drawable/ooo"
+        android:filterTouchesWhenObscured="true"
+        />
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:filterTouchesWhenObscured="true"
+        android:layout_marginTop="270dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rrr"
+        />
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:filterTouchesWhenObscured="true"
+        android:layout_marginTop="295dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ttt"
+        />
+    <TextView
+        android:id="@+id/successful"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:layout_below="@id/img2"
+        android:text="Successful!"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textLorem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/successful"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/Scelerisque2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textLorem2"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:text="Scelerisque aenean mi sed donec"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/continue2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONTINUE"
+        android:layout_below="@+id/Scelerisque2"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/continue2"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="45dp"
+        />
+
+    <View
+        android:layout_width="70dp"
+        android:layout_height="1dp"
+        android:background="#036913"
+        android:layout_below="@+id/continue2"
+        android:layout_marginTop="29dp"
+        android:layout_marginLeft="40dp"
+        />
+    <View
+        android:layout_width="150dp"
+        android:layout_height="3dp"
+        android:background="#036913"
+        android:layout_below="@id/continue2"
+        android:layout_marginTop="29dp"
+        android:layout_marginLeft="115dp"
+        />
+    <View
+        android:layout_width="70dp"
+        android:layout_height="1dp"
+        android:background="#036913"
+        android:layout_below="@+id/continue2"
+        android:layout_marginTop="29dp"
+        android:layout_marginLeft="273dp"
+        />
+
+
+    <TextView
+        android:id="@+id/dont_want_this_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/continue2"
+        android:layout_marginLeft="97dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:text="Don’t want this one?"
+        android:textColor="#80000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/continue2"
+        android:layout_marginLeft="257dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:text="Edit"
+        android:textColor="#02B65F"
+        android:textSize="15sp" />
+
+</RelativeLayout>

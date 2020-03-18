@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalorieCounter">
+
+    <TextView
+        android:id="@+id/calorie_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calorie Counter"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:textStyle="bold"
+        />
+
+    <!--<TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_below="@id/calorie_counter"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        />
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gender">
+
+        <RadioButton
+            android:id="@+id/rd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="Male"
+            android:textStyle="italic"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:textStyle="italic"
+            android:layout_marginLeft="100dp"/>
+
+    </RadioGroup>-->
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner1"
+        android:layout_below="@id/calorie_counter"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="50dp"
+        />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your age"
+        android:layout_below="@id/spinner1"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="50dp"
+        />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your height"
+        android:layout_below="@id/age"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="50dp"
+        />
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your weight"
+        android:layout_below="@id/height"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="50dp"
+        />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weight"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/submit"
+        android:fontFamily="@font/merriweather_sans_light"
+        android:text="SUBMIT"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+</RelativeLayout>

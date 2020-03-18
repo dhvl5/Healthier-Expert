@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#263238">
+
+    <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginHorizontal="20dp"
+        android:text="Title"
+        android:textColor="@android:color/darker_gray"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:singleLine="true"
+        android:background="@drawable/custom_edittext"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:layout_marginVertical="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edit_title"
+        android:background="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/createNoteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Submit Note"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="335dp"/>
+
+</RelativeLayout>
