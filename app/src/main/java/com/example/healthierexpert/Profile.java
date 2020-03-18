@@ -2,20 +2,18 @@ package com.example.healthierexpert;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,14 +28,6 @@ public class Profile extends AppCompatActivity
     String bmi_final;
     TextView bmi_num;
     Button button;
-
-    PopupWindow popUp;
-    LinearLayout layout;
-    TextView tv;
-    ViewGroup.LayoutParams params;
-    LinearLayout mainLayout;
-    Button but;
-    boolean click = true;
 
 
     @Override
@@ -59,41 +49,29 @@ public class Profile extends AppCompatActivity
 
         button=findViewById(R.id.bmi_popup);
 
-        /*popUp = new PopupWindow(this);
-        layout = new LinearLayout(this);
-        mainLayout = new LinearLayout(this);
-        tv = new TextView(this);
-        but = new Button(this);
-        but.setText("Click Me");
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                /*AlertDialog.Builder builder = new AlertDialog.Builder(getApplicationContext());
+                builder.setCancelable(true);
+                builder.setTitle("Title");
+                builder.setMessage("Message");
+                builder.setPositiveButton("Confirm",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                            }
+                        });
+                builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                    }
+                });
 
-
-
-                if (click) {
-                    popUp.showAtLocation(layout, Gravity.BOTTOM, 10, 10);
-                    popUp.update(50, 50, 300, 80);
-                    click = false;
-                } else {
-                    popUp.dismiss();
-                    click = true;
-                }
-
+                AlertDialog dialog = builder.create();
+                dialog.show();*/
             }
         });
-
-        popUp.setContentView(layout);
-        popUp.showAtLocation(layout, Gravity.BOTTOM, 10, 10);
-        params = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
-                ViewGroup.LayoutParams.WRAP_CONTENT);
-        layout.setOrientation(LinearLayout.VERTICAL);
-        tv.setText("Hi this is a sample text for popup window");
-        layout.addView(tv, params);
-
-        mainLayout.addView(but, params);
-        setContentView(mainLayout);*/
 
 
 
@@ -138,8 +116,13 @@ public class Profile extends AppCompatActivity
                         startActivity(new Intent(Profile.this,FAQs.class));
                         finish();
                         break;
+                    case R.id.logout:
+                        startActivity(new Intent(Profile.this, login.class));
+                        SharedPreferences sharedPreferences = getSharedPreferences("login", MODE_PRIVATE);
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        editor.remove("login");
+                        editor.apply();
                     default:
-
                     break;
                 }
                 return true;

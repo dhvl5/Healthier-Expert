@@ -16,6 +16,9 @@
         <item
             android:title="@string/navigation_item_5"
             android:id="@+id/nav_item_5"/>
+        <item
+            android:title="Logout"
+            android:id="@+id/logout"/>
     </group>
     <!--<item android:title="subtitles">
         <menu>

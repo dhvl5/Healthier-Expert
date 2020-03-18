@@ -2,7 +2,9 @@ package com.example.healthierexpert;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
@@ -29,11 +31,22 @@ public class login extends AppCompatActivity
     EditText email, password;
     String url = "https://creartproducts.com/student_api/healthierexpert/user_login.php";
 
+    SharedPreferences sharedPreferences;
+    SharedPreferences.Editor editor;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        sharedPreferences = getApplicationContext().getSharedPreferences("login", Context.MODE_PRIVATE);
+        editor = sharedPreferences.edit();
+        editor.apply();
+
+        if(sharedPreferences.contains("login")) {
+            new Intent(login.this, Profile.class);
+        }
 
         b1 = findViewById(R.id.signin);
         email = findViewById(R.id.enter_your_email);
@@ -75,12 +88,17 @@ public class login extends AppCompatActivity
                     JSONObject jsonObject = new JSONObject(response);
                     String error = jsonObject.getString("error");
                     String message = jsonObject.getString("msg");
-                    if (error.equals("0")) {
+                    if (error.equals("0"))
+                    {
                         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
-                        Intent intent10 = new Intent(login.this, Activity.class);
+                        editor.putString("login", "");
+                        editor.commit();
+                        Intent intent10 = new Intent(login.this, Profile.class);
                         startActivity(intent10);
                         finish();
-                    } else {
+                    }
+                    else
+                    {
                         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
                     }
                 } catch (Exception e) {
